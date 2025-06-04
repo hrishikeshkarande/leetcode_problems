@@ -3,7 +3,7 @@ class Solution:
         slow = 0
 
         for fast in range(len(t)):
-            if slow < len(s) and t[fast] == s[slow]: 
+            if slow < len(s) and t[fast] == s[slow]: #slow <len(s) is to handle a special case, the other condition is logic
                 slow += 1
         
         if slow == len(s):
